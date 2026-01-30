@@ -9,12 +9,18 @@
 }
 
 .navigation {
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
   display: flex;
+  background-color: white;
   gap: 3em;
   height: 3.7rem;
   padding: 1rem;
   border-bottom: 0.1rem solid rgb(215, 211, 211);
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
   a {
     text-decoration: none;
   }
@@ -114,6 +120,118 @@
     top: 20px;
   }
 }
+.hero {
+  margin: auto;
+  width: 90%;
+  position: relative;
+  width: 100%;
+  height: 70vh;
+  background: rgba(0, 0, 0, 0.498) url(../Assets/home.webp);
+  background-blend-mode: darken;
+  background-position: center;
+  background-size: cover;
+
+  text-align: center;
+  margin-top: 3rem;
+}
+.txtbox {
+  width: 70%;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.3rem;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.commentbox {
+  /* background:
+    linear-gradient(#ffffff, #ffffff) padding-box,
+    linear-gradient(45deg, rgb(11, 134, 217), rgb(41, 255, 41), rgb(3, 51, 134))
+      border-box; */
+  background-color: wheat;
+  border-radius: 0.5rem;
+  border: 1px solid transparent;
+  margin: 50px 0;
+  padding: 10px 20px;
+  width: 40%;
+  margin: auto;
+  margin-top: 3rem;
+  text-align: center;
+}
+.commentform textarea::placeholder {
+  line-height: 1.6rem;
+  font-size: 0.9rem;
+}
+.commentform input,
+.commentform textarea {
+  width: 100%;
+  padding: 1rem;
+  padding-top: 1rem;
+
+  margin: 15px 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  background: #f0f0f0;
+}
+.commentform button {
+  margin: 10px 0;
+}
+.abt {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.9rem 1.2rem;
+  font-size: 1rem;
+  width: 100%;
+  right: 0rem;
+  bottom: 0rem;
+  position: relative;
+  background: linear-gradient(90deg, rgb(255, 202, 105), rgb(50, 6, 22));
+  cursor: pointer;
+}
+.abt:hover {
+  background: linear-gradient(90deg, rgb(50, 6, 22), rgb(255, 202, 105));
+}
+@media (max-width: 700px) {
+  .abt {
+    font-size: 0.7rem;
+  }
+  .commentbox {
+    margin-top: 3rem;
+    width: 50%;
+  }
+  .commentform textarea::placeholder {
+    line-height: 1rem;
+    font-size: 0.7rem;
+  }
+}
+.roww {
+  text-align: center;
+  line-height: 1.7rem;
+
+  word-spacing: 0.1rem;
+
+  h3 {
+    color: rgb(32, 32, 30);
+  }
+  p {
+    color: #5e5e5e;
+  }
+}
+.conatiner {
+  margin: auto;
+}
+.content {
+  padding-top: 3rem;
+  width: 90%;
+  margin: auto;
+}
+
 .footer {
   margin: auto;
   background-color: rgb(50, 6, 22);
