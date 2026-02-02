@@ -216,9 +216,11 @@
 
 
 @media (max-width: 700px) {
-  .abt {
-    font-size: 0.7rem;
-  }
+  
+.txtbox {
+  font-size: 1rem;
+}
+
   .commentbox {
     margin-top: 3rem;
     width: 50%;
@@ -342,7 +344,7 @@
   transition: 1s;
 }
 .footercol .fa-envelope:hover {
-  color: white;
+  color: rgb(59, 145, 176);
   transition: 1s;
 }
 .fa-location-dot:hover {
