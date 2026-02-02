@@ -117,7 +117,7 @@
     margin: 10px;
     position: absolute;
     right: 0;
-    top: 20px;
+    top: 5px;
   }
 }
 .hero {
@@ -197,6 +197,12 @@
 .abt:hover {
   background: linear-gradient(90deg, rgb(50, 6, 22), rgb(255, 202, 105));
 }
+
+
+
+
+
+
 @media (max-width: 700px) {
   .abt {
     font-size: 0.7rem;
