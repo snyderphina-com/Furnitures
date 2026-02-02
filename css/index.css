@@ -130,7 +130,19 @@
   background-blend-mode: darken;
   background-position: center;
   background-size: cover;
-
+  text-align: center;
+  margin-top: 3rem;
+}
+.heroa {
+  margin: auto;
+  width: 90%;
+  position: relative;
+  width: 100%;
+  height: 70vh;
+  background: rgba(0, 0, 0, 0.498) url(../Assets/abt.webp);
+  background-blend-mode: darken;
+  background-position: center;
+  background-size: cover;
   text-align: center;
   margin-top: 3rem;
 }
