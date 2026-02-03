@@ -348,11 +348,11 @@
   transition: 1s;
 }
 .fa-location-dot:hover {
-  color: white;
+  color: rgb(59, 145, 176);
   transition: 1s;
 }
 .fa-tablet:hover {
-  color: white;
+  color: rgb(59, 145, 176);
   transition: 1s;
 }
 
