@@ -251,6 +251,98 @@
   width: 90%;
   margin: auto;
 }
+.aboutlinks{
+  display: flex;
+  flex-direction:row;
+  align-items: center;
+  justify-content: center;
+ margin-top: 3rem;
+}
+.aboutlinks a{
+  text-decoration: none;
+  color:rgb(82, 8, 35);
+ 
+}.aboutlinks p{
+   color: rgb(219, 162, 55);
+}
+.about{
+  margin: auto;
+  width: 90%;
+  padding-top: 2rem;
+}
+
+
+#aboutcoll{
+  color: rgb(82, 8, 35);
+}
+
+
+#aboutcoll 
+.aboutdisplay{
+ margin-top: 2rem;
+ margin-bottom: 2rem;
+width: 60rem;
+height: 30rem;
+
+  border: 0.1rem solid transparent;
+  background:
+    linear-gradient(#ffffff, #ffffff) padding-box,
+    linear-gradient(60deg, rgb(112, 5, 44) , rgb(219, 162, 55))
+      border-box;
+
+  border-radius: 0.4rem;
+
+
+
+
+
+
+
+
+  
+}
+.aboutcol li{
+list-style: none;
+line-height: 4rem;
+}
+.aboutcol a{
+  text-decoration: none;
+  /* color: #5e5e5e; */
+  color: rgb(219, 162, 55);
+}
+.aboutcol a:hover{
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+     color: rgb(82, 8, 35);
+      transition: 0.6s ease-in-out;
+      transform: scale(1.1);
+}
+
+
+.vertical-hr {
+  width: 1px;
+  height: 20rem;  
+  background-color: #cdcaca;
+  border: none;
+
+ 
+
+  
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .footer {
   margin: auto;
