@@ -284,6 +284,7 @@ color: rgb(82, 8, 35);
 .aboutdisplay{
   
   display: flex;
+  flex-direction: row;
  margin-top: 2rem;
  margin-bottom: 2rem;
 width: 60rem;
@@ -316,10 +317,10 @@ color: rgb(82, 8, 35);
     
   margin-top: 7rem;
   display: flex;
- margin-top: 2rem;
- margin-bottom: 2rem;
+ margin-top: 3rem;
+
 width:100vw;
-height: 100vh;
+height: 60vh;
 
   border: 0.2rem solid transparent;
   background:
@@ -658,5 +659,65 @@ transition: 0.7s ease-in-out;
   .footer {
     padding: 1rem;
     font-size: 0.8rem;
+  }
+}
+@media (max-width: 1024px) {
+
+  /* NAVIGATION */
+  .navigation {
+    padding: 0.8rem;
+    gap: 1rem;
+  }
+
+  /* HERO */
+  .hero,
+  .heroa {
+    height: 60vh;
+  }
+
+  .txtbox {
+    width: 90%;
+    font-size: 1.1rem;
+  }
+
+  /* ABOUT SECTIONS */
+  .aboutdisplay,
+  .aboutdisplayy {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+  }
+
+  .aboutimg,
+  .aboutimg img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* TABLE */
+  .info-table {
+    width: 100%;
+    font-size: 0.9rem;
+  }
+
+  /* HR FIX */
+  .hr,
+  .hrr {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* FOOTER */
+  .row,
+  .rowww {
+    flex-direction: column;
+    gap: 2rem;
+    padding-right: 0;
+  }
+
+  /* COMMENT BOX */
+  .commentbox {
+    width: 90%;
   }
 }
