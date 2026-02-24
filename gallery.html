@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FurnitureHub</title>
     <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/contact.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -44,6 +45,147 @@
     </div>
     <br /> 
 
+
+
+ <div class="herog">
+     
+  <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br><br> <br> <br>
+<br> <br> 
+
+   <p><a href="gallery.html" class="abt">
+View More</a></p>
+    </div>
+
+</div>
+
+
+
+
+<!-- Secondary Navbar -->
+<nav class="secondary-nav">
+  <ul>
+    <li><a href="#living">Living Room</a></li>
+    <li><a href="#dining">Dining Room</a></li>
+    <li><a href="#bedroom">Bedroom</a></li>
+    <li><a href="#outdoor">Outdoor</a></li>
+  </ul>
+</nav>
+
+<!-- Main Content -->
+<section class="gallery" id="living">
+  <!-- gallery items here -->
+</section>
+
+
+
+
+
+
+<section class="gallery">
+
+  <div class="gallery-item">
+  <img src="Assets/1.jpeg">
+ <div class="overlay"><h6>Modern Sofa</h6></div>
+  </div>
+
+
+<div class="gallery-item">
+  <img src="Assets/2.jpeg">
+  <div class="overlay"><h6>Modern Sofa</h6></div>
+</div>
+
+
+<div class="gallery-item">
+  <img src="Assets/3.jpeg">
+  <div class="overlay"><h6>Modern Sofa</h6></div>
+</div>
+
+
+<div class="gallery-item">
+  <img src="Assets/4.jpeg">
+  <div class="overlay"><h6>Modern Sofa</h6></div>
+</div>
+
+
+<div class="gallery-item">
+  <img src="Assets/sh1.webp">
+  <div class="overlay"><h6>Modern Sofa</h6></div>
+</div>
+
+  
+<div class="gallery-item">
+  <img src="Assets/about2.webp">
+  <div class="overlay"><h6>Modern Sofa</h6></div>
+</div>
+
+
+<div class="gallery-item">
+  <img src="Assets/shelf1.jpg">
+  <div class="overlay"><h6>Modern Sofa</h6></div>
+</div>
+
+
+<div class="gallery-item">
+  <img src="Assets/blackluxury.jpeg">
+  <div class="overlay"><h6>Modern Sofa</h6></div>
+</div>
+
+
+<div class="gallery-item">
+  <img src="Assets/bp.webp">
+  <div class="overlay"><h6>Modern Sofa</h6></div>
+</div>
+</section>
+
+
+
+<!-- Gallery Sections -->
+<section class="gallery" id="living">
+  <h2>Living Room</h2>
+  <div class="gallery-item">
+    <img src="Assets/1.jpeg" alt="Living Room 1">
+    <div class="overlay"><h6>Sofa</h6></div>
+  </div>
+  <div class="gallery-item">
+    <img src="Assets/2.jpeg" alt="Living Room 2">
+    <div class="overlay"><h6>Armchair</h6></div>
+  </div>
+</section>
+
+<section class="gallery" id="dining">
+  <h2>Dining Room</h2>
+  <div class="gallery-item">
+    <img src="Assets/3.jpeg" alt="Dining Table">
+    <div class="overlay"><h6>Table</h6></div>
+  </div>
+  <div class="gallery-item">
+    <img src="Assets/4.jpeg" alt="Dining Chairs">
+    <div class="overlay"><h6>Chairs</h6></div>
+  </div>
+</section>
+
+<section class="gallery" id="bedroom">
+  <h2>Bedroom</h2>
+  <div class="gallery-item">
+    <img src="Assets/shelf1.jpg" alt="Bed">
+    <div class="overlay"><h6>Bed</h6></div>
+  </div>
+</section>
+
+<section class="gallery" id="outdoor">
+  <h2>Outdoor</h2>
+  <div class="gallery-item">
+    <img src="Assets/shelf2.jpg" alt="Patio Set">
+    <div class="overlay"><h6>Patio Set</h6></div>
+  </div>
+</section>
+
+
+
+
+<!-- 
+
+
 <div class="gallery">
 <img src="Assets/sh1.webp" alt="">
 <img src="Assets/sh1.webp" alt="">
@@ -60,7 +202,7 @@
 
 
 
-</div>
+</div> -->
     <br />
     <br />
 
@@ -157,6 +299,23 @@
       function hidemenu() {
         navlinks.style.right = "-200px";
       }
+
+    </script>
+
+    <script>
+      window.addEventListener('scroll', function() {
+  const nav = document.querySelector('.secondary-nav');
+  const hero = document.querySelector('.herog');
+  
+  // Distance from top of page where nav should become sticky
+  const heroBottom = hero.offsetHeight;
+  
+  if (window.scrollY >= heroBottom) {
+    nav.classList.add('sticky');
+  } else {
+    nav.classList.remove('sticky');
+  }
+});
     </script>
   </body>
 </html>
