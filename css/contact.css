@@ -113,7 +113,15 @@
   border-radius: 12px;
   break-inside: avoid;
   transition: transform 0.3s ease,filter 0.3s ease;
+
 }
+.gallery h2{
+    color: transparent;
+    background: linear-gradient(90deg, rgb(195, 4, 74), rgb(254, 181, 46));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 550;
+  }
 .gallery-item:hover img {
   filter: brightness(70%); /* makes image darker */
   transform: scale(1.01);  /* optional subtle zoom */
@@ -176,6 +184,7 @@
   transition: all 0.3s ease;
   position: relative; /* initially not fixed */
   z-index: 900;
+
 }
 
 .secondary-nav ul {
