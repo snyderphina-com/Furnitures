@@ -1,0 +1,102 @@
+/* CONTACT HTML 00000000000000000000000000000000000000000000000000000000000000000000000000000*/
+.heroc {
+  margin: auto;
+  width: 90%;
+  position: relative;
+  width: 100%;
+  height: 70vh;
+  background: rgba(0, 0, 0, 0.4) url(../Assets/about2.webp);
+  background-blend-mode: darken;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.contactus{
+    width: 90%;
+    margin: auto;
+    padding-top: 2rem;
+}
+.contactcol{
+    flex-basis: 48%;
+    margin-bottom: 2rem;
+    iframe{
+        width: 100%;
+    }
+}
+.contactcol div{
+    display: flex;
+    align-items: center;
+    margin-top: 4rem;
+}
+.contactcol div i{
+    font-size:1.6rem;
+       background:linear-gradient(45deg, rgb(82,8,35),rgb(219,162,55));
+    -webkit-background-clip: text;
+    color: transparent;
+    margin:1rem ;
+    margin-right: 2rem;
+    
+}
+
+.contactcol div p{
+    padding: 0;
+       color:rgb(82, 8, 35);
+      font-style: italic;
+      font-weight: 550;
+}
+
+.contactcol div h5{
+    font-size:1.2rem ;
+    margin-bottom:0.2rem ;
+    font-weight:550 ;
+
+  color: rgb(219, 162, 55);
+}
+  .form{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-basis: 44%;
+    gap: 7rem;
+    h2{
+        color:  rgb(219, 162, 55);
+        line-height: 2.6rem;
+    }
+  }
+.form input,.form textarea{
+    width:100% ;
+    padding: 1.2rem;
+    margin-bottom:1.2rem ;
+    outline: none;
+    border:1px solid  rgb(219,162,55);
+    border-radius: 5px;
+    box-sizing: border-box;
+    
+}
+.form input::placeholder{
+    color:rgb(82,8,35) ;
+}
+.form textarea::placeholder{
+    color:rgb(82,8,35)  ;
+}
+
+
+/*0000000000000000000000000000000000000000000000000000000000000000000000000*/
+@media (max-width:700px) {
+    .contactcol div i{
+        font-size: 1.2rem;
+    }
+.contactcol div h5{
+    font-size:0.9rem ;
+}
+.contactcol div p{
+    font-size:0.9rem ;
+}
+
+.form{
+    display: block;
+}
+
+}
