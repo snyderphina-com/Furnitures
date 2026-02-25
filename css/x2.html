@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FurnitureHub News</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .gradient-btn {
+      background: linear-gradient(135deg, rgb(219, 162, 55), rgb(100, 4, 39));
+      transition: all 0.3s ease;
+    }
+
+    .gradient-btn:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    }
+  </style>
+</head>
+<body class="bg-gray-100 min-h-screen">
+
+  <header class="bg-white shadow-md">
+    <div class="max-w-7xl mx-auto px-6 py-6 flex justify-between items-center">
+      <h1 class="text-3xl font-bold text-gray-800">FurnitureHub News</h1>
+      <button class="gradient-btn text-white px-6 py-2 rounded-full font-semibold">
+        Subscribe
+      </button>
+    </div>
+  </header>
+
+  <section class="max-w-7xl mx-auto px-6 py-12">
+    <div class="grid md:grid-cols-3 gap-8">
+
+      <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
+        <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7" class="w-full h-56 object-cover" />
+        <div class="p-6">
+          <h2 class="text-xl font-bold mb-2">New Modern Sofa Collection Launched</h2>
+          <p class="text-gray-600 mb-4">FurnitureHub introduces a luxury sofa line combining comfort and elegance for modern homes.</p>
+          <button class="gradient-btn text-white px-5 py-2 rounded-full font-medium">
+            Read More
+          </button>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
+        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c" class="w-full h-56 object-cover" />
+        <div class="p-6">
+          <h2 class="text-xl font-bold mb-2">Sustainable Wood Initiative</h2>
+          <p class="text-gray-600 mb-4">We are now using eco-friendly materials to ensure sustainability and durability.</p>
+          <button class="gradient-btn text-white px-5 py-2 rounded-full font-medium">
+            Learn More
+          </button>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
+        <img src="https://images.unsplash.com/photo-1616627987327-7d6e42197e1d" class="w-full h-56 object-cover" />
+        <div class="p-6">
+          <h2 class="text-xl font-bold mb-2">Mega Bedroom Sale 2026</h2>
+          <p class="text-gray-600 mb-4">Enjoy up to 30% off on selected bedroom furniture this season.</p>
+          <button class="gradient-btn text-white px-5 py-2 rounded-full font-medium">
+            Shop Now
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="bg-white py-12 mt-10">
+    <div class="max-w-4xl mx-auto text-center px-6">
+      <h2 class="text-2xl font-bold mb-4">Stay Updated</h2>
+      <p class="text-gray-600 mb-6">Get the latest furniture trends, product launches, and exclusive deals directly to your inbox.</p>
+      <div class="flex flex-col md:flex-row gap-4 justify-center">
+        <input type="email" placeholder="Enter your email" class="px-4 py-3 border rounded-full w-full md:w-1/2 focus:outline-none focus:ring-2 focus:ring-yellow-600" />
+        <button class="gradient-btn text-white px-6 py-3 rounded-full font-semibold">
+          Join Now
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-gray-900 text-white py-6 mt-10">
+    <div class="text-center">
+      <p>© 2026 FurnitureHub. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
