@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FurnitureHub</title>
     <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/contact.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -18,6 +19,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+      <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
     <div class="navigation">
@@ -42,11 +44,95 @@
       <i class="fa-solid fa-caret-down" id="bar" onclick="showmenu()"></i>
       <a href="linkbtn.html" class="linkbtn">FastQuote</a>
     </div>
-    <br />
-    <br />
+    <br><br>
+
+<br><br>
+
+
+    <div class="flex flex-col md:flex-row gap-4 mb-8 justify-between items-center">
+      <input
+        type="text"
+        id="search"
+        placeholder="Search furniture..."
+        class="w-full md:w-1/3 p-3 rounded-2xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-400"
+      />
+
+      <select
+        id="category"
+        class="w-full md:w-1/4 p-3 rounded-2xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-400"
+      >
+        <option value="All">All</option>
+        <option value="Living Room">Living Room</option>
+        <option value="Dining">Dining</option>
+        <option value="Office">Office</option>
+        <option value="Bedroom">Bedroom</option>
+      </select>
+    </div>
+
+    <div id="products" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+  </div>
+
+  <script>
+    const products = [
+      { id: 1, name: "Modern Sofa", price: 45000, category: "Living Room", image: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7" },
+      { id: 2, name: "Wooden Dining Table", price: 65000, category: "Dining", image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c" },
+      { id: 3, name: "Office Chair", price: 15000, category: "Office", image: "https://images.unsplash.com/photo-1580480055273-228ff5388ef8" },
+      { id: 4, name: "Queen Bed Frame", price: 55000, category: "Bedroom", image: "https://images.unsplash.com/photo-1616627987327-7d6e42197e1d" },
+      { id: 5, name: "Coffee Table", price: 18000, category: "Living Room", image: "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85" },
+      { id: 6, name: "Wardrobe Closet", price: 72000, category: "Bedroom", image: "https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf" },
+      {id:7, name:'Snyder',price:1000000,category:'Bedroom',image:'Assets/1.jpeg'}
 
 
 
+
+
+    ];
+
+    const productsContainer = document.getElementById("products");
+    const searchInput = document.getElementById("search");
+    const categorySelect = document.getElementById("category");
+
+    function displayProducts(items) {
+      productsContainer.innerHTML = "";
+
+      items.forEach(product => {
+        const card = document.createElement("div");
+        card.className = "bg-white rounded-2xl shadow-md hover:shadow-xl transition duration-300 overflow-hidden";
+
+        card.innerHTML = `
+          <img src="${product.image}" alt="${product.name}" class="w-full h-56 object-cover" />
+          <div class="p-5">
+            <h2 class="text-xl font-semibold text-gray-800">${product.name}</h2>
+            <p class="text-gray-500 mt-1">${product.category}</p>
+            <p class="text-lg font-bold mt-3">KES ${product.price.toLocaleString()}</p>
+            <button class="mt-4 w-full bg-gray-800 text-white py-2 rounded-2xl hover:bg-gray-700 transition">
+              Add to Cart
+            </button>
+          </div>
+        `;
+
+        productsContainer.appendChild(card);
+      });
+    }
+
+    function filterProducts() {
+      const searchValue = searchInput.value.toLowerCase();
+      const categoryValue = categorySelect.value;
+
+      const filtered = products.filter(product => {
+        const matchesSearch = product.name.toLowerCase().includes(searchValue);
+        const matchesCategory = categoryValue === "All" || product.category === categoryValue;
+        return matchesSearch && matchesCategory;
+      });
+
+      displayProducts(filtered);
+    }
+
+    searchInput.addEventListener("input", filterProducts);
+    categorySelect.addEventListener("change", filterProducts);
+
+    displayProducts(products);
+  </script>
 
 
 
@@ -146,6 +232,27 @@
       function hidemenu() {
         navlinks.style.right = "-200px";
       }
+    </script>
+
+    <script>
+ 
+      window.addEventListener('scroll', function() {
+  const nav = document.querySelector('.secondary-nav');
+  const hero = document.querySelector('.herog');
+  
+  // Distance from top of page where nav should become sticky
+  const heroBottom = hero.offsetHeight;
+  
+  if (window.scrollY >= heroBottom) {
+    nav.classList.add('sticky');
+  } else {
+    nav.classList.remove('sticky');
+  }
+});
+    
+
+
+
     </script>
   </body>
 </html>
