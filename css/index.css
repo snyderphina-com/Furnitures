@@ -103,6 +103,9 @@ body{
   transform: rotate(-90deg);
 }
 @media (max-width: 700px) {
+  .navigation{
+    gap: 5rem;
+  }
   .navlinks ul {
     display: flex;
     flex-direction: column;
@@ -117,9 +120,7 @@ body{
  padding-top: 2rem;
       }
   
-  .navigation {
-    gap: 9rem;
-  }
+
   .navlinks {
     position: fixed;
   
@@ -379,7 +380,8 @@ color: wheat;
   flex-direction: row;
   justify-content: space-between;
  img{
-  width: 40%;
+  width: 50%;
+  height: 40%;
 }
   p {
   padding-right: 3rem;
@@ -461,10 +463,11 @@ border: none;
  width: 63rem;
 margin-bottom: 2rem;
  margin-left: 18rem;
-line-height: 2.6rem;
+line-height: 2rem;
 p{
   color: #5e5e5e;
-  font-size: 1.3rem;
+  font-size: 1rem;
+ 
 }
  h3{
  color:rgb(82, 8, 35) ;
@@ -585,7 +588,7 @@ transition: 0.7s ease-in-out;
   p{
     padding-top: 1rem;
     line-height: 2rem;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
   a{
    
@@ -764,7 +767,7 @@ a:hover::after {
  
   .aboutdisplay{
    margin: auto;
-   width: 99%;
+   width: 90%;
   }
 
 
@@ -780,6 +783,7 @@ a:hover::after {
     font-size: 0.9rem;
     p{
       font-size: 0.9rem;
+      line-height: 1.1rem;
     }
   }
 
@@ -850,11 +854,11 @@ p{
     color: rgb(82, 8, 35);
   font-size: 1.3rem;
   font-weight: 600;
-  line-height: 2rem;
+
   padding-top: 4rem;
 }
 img{
- width: 40vw;
-  height: 50vh;
+ width: 50vw;
+  height: 40vh;
 }
 }
