@@ -73,7 +73,7 @@
     border:1px solid  rgb(219,162,55);
     border-radius: 5px;
     box-sizing: border-box;
-    
+      color:rgb(82,8,35) ;
 }
 .form input::placeholder{
     color:rgb(82,8,35) ;
@@ -338,6 +338,15 @@
 }
 
 /*GALLERY*/
+
+.herog {
+ 
+  width: 99%;
+  height: 70vh;
+ 
+ 
+}
+
 
 .gallery {
   column-count: 2;
